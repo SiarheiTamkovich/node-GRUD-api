@@ -1,5 +1,3 @@
-import {server} from "./http/server.js"
+import 'dotenv/config';
 
-//server();
-
-console.log('ok ddd')
+console.log(process.env);

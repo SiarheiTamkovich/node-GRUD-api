@@ -1,15 +1,12 @@
-import http from "http";
+import http from 'http';
 
 export const server = () => {
-  
-  let message = "GRUD API server started!";
+  const message: string = 'Http server started!';
 
-  http.createServer(function(request,response){
-
+  http.createServer(function(request, response): void {
     console.log(message);
     response.end(message);
-    
-  }).listen(3000, "127.0.0.1", () => {
-      console.log("Http server started and listen requests...");
+  }).listen(3000, '127.0.0.1', () => {
+    console.log('Http server started and listen requests...');
   });
-}
+};
