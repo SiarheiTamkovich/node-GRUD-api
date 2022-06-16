@@ -1,5 +1,32 @@
 {
+  "name": "nodemon",
+  "version": "1.0.0",
+  "description": "simple GRUD API",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon ts-node src/app.ts",
+    "build": "tsc && node dist/app.js",
+    "open": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiarheiTamkovich/node-GRUD-api.git"
+  },
+  "author": "Tamkovich Siahei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiarheiTamkovich/node-GRUD-api/issues"
+  },
+  "homepage": "http://nodemon.io",
   "devDependencies": {
+    "@types/node": "^18.0.0",
+    "eslint": "^8.17.0",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   }
