@@ -11,10 +11,4 @@ export const apiServer = () => {
   }
   server();
 }
-
-console.log(cluster)
-
 apiServer();
-
-
-
