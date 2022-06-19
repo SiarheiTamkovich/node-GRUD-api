@@ -1,6 +1,6 @@
-import { Http2ServerRequest } from "http2";
+import { IncomingMessage } from "http";
 
-export function getReqData(request: Http2ServerRequest) {
+export async function getReqData(request: IncomingMessage) {
   return new Promise((resolve, reject) => {
       try {
           let body = "";
