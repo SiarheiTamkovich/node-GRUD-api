@@ -1,7 +1,7 @@
 import http from 'http';
 import { ControllerUser } from '../controllers/conrtoller.users.js'
 import { userModel } from '../models/models.js';
-import { getReqData } from '../utils.js';
+import { getReqData } from '../utils/utils.js';
 
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST;
