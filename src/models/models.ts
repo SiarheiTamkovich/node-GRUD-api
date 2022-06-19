@@ -1,10 +1,6 @@
-export interface db {
-  users: user[]
-}
-
-export interface user {
+export interface userModel {
   "id": number,
   "username": string,
   "age": number,
-  "hobbies": string[]
+  "hobbies": string[],
 }
