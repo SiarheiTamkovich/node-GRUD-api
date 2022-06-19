@@ -17,12 +17,8 @@ $user: cd node-GRUD-api
 
 ## Endpoints:
 
-- `Auth` (`/` route)
-  - `POST /signup` - new user registration
-  - `POST /signin` - user authorization
-- `User` (`/` route)
 
-  - `GET /users` - get all users
-  - `GET /users/:userId` - get the user by id (ex. “/users/123”)
-  - `PUT /users/:userId` - update user
-  - `DELETE /users/:userId` - delete user
+  - `GET api/user` - get all users
+  - `GET api/user/:Id` - get the user by id (ex. “/user/123”)
+  - `PUT api/user/:Id` - update user
+  - `DELETE api/user/:Id` - delete user

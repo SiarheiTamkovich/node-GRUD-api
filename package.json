@@ -8,6 +8,7 @@
     "test": "test",
     "start": "nodemon ts-node src/app.ts",
     "start:dev": "nodemon ts-node src/app.ts",
+    "start:multi": "nodemon ts-node src/app-cluster.ts",
     "build": "tsc && node dist/app.js",
     "open:build": "node dist/app.js",
     "start:prod": "cross-env NODE_ENV=production webpack --config webpack.config.cjs",
