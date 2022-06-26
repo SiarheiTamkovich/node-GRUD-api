@@ -17,8 +17,8 @@ $user: cd node-GRUD-api
 
 ## Endpoints:
 
-
   - `GET api/user` - get all users
   - `GET api/user/:Id` - get the user by id (ex. “/user/123”)
   - `PUT api/user/:Id` - update user
   - `DELETE api/user/:Id` - delete user
+
