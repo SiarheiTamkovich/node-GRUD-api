@@ -1,0 +1,50 @@
+{
+  "name": "nodemon",
+  "version": "1.0.0",
+  "description": "simple GRUD API",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon ts-node src/app.ts",
+    "start:dev": "nodemon ts-node src/app.ts",
+    "start:multi": "nodemon ts-node src/app-cluster.ts",
+    "build": "tsc && node dist/app.js",
+    "open:build": "node dist/app.js",
+    "start:prod": "cross-env NODE_ENV=production webpack --config webpack.config.cjs",
+    "open:prod": "node prod/main.bundle.js",
+    "greet": "cross-env-shell GREETING=Hello NAME=Siarhei \"echo $GREETING && echo $NAME\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiarheiTamkovich/node-GRUD-api.git"
+  },
+  "author": "Tamkovich Siahei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiarheiTamkovich/node-GRUD-api/issues"
+  },
+  "homepage": "http://nodemon.io",
+  "devDependencies": {
+    "@types/json-server": "^0.14.4",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.17.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.16",
+    "prettier": "2.7.1",
+    "ts-node": "^10.8.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "dotenv": "^16.0.1",
+    "mocha": "^10.0.0"
+  }
+}
